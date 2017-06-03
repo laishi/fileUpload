@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>CMP5 Opdracht 15</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://rafaeldejongh.github.io/Rafael-CSS-Reset/reset.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/basic.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <main>
+  <h1>Image Upload - Drag & Drop</h1>
+  <form action="/file-upload" class="dropzone" id="dpUpload" method="post" enctype="multipart/form-data">
+		<div class="fallback">
+			<input type="file" name="image" accept="image/x-png,image/jpeg" required>
+			<input type="submit" value="Upload" name="submit">
+			<input type="hidden" value="{{csrf_token()}}" name="_token">
+		</div>
+	</form>
+</main>
+<footer>Copyright &copy; 2016 | <a href="http://rafaeldejongh.com" target="_blank">Rafa&euml;l De Jongh</a> | <a href="https://github.com/enyo/dropzone" target="_blank">Dropzone.js</a>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone-amd-module.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dropzone/4.3.0/min/dropzone.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
